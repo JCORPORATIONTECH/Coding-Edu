@@ -125,7 +125,7 @@
 .spot_banner_inner{
 	width: 946px;
 	height: 480px;
-	position; relative;
+	position: relative;
 	margin: 0 auto;
 }
 
@@ -147,10 +147,6 @@
     right: 20px;
 }
 
-/*.card_section{
-	
-}*/
-
 .card_section_inner{
 	width: 946px;
 	height: 56px;
@@ -162,14 +158,13 @@
 
 .self_information{
 	height: 463px;
+	border-bottom: 2px solid #f5f5f5;
 }
 
 .self_info_wrp{	
 	width: 946px;
 	height: 365px;
-	margin: 0 auto;	
-	margin-top: 48px;
-	border-bottom: 2px solid #f5f5f5;
+	margin: 48px auto 0 auto;
 }
 
 /* common */

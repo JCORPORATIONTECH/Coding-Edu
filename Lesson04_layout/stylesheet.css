@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* reset */
+body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{
+    margin:0;
+    padding:0;
+}
+body,button,input,select,table,textarea{
+    font-size:12px;
+    font-family:Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif
+}
+button,input{
+    border-radius:0
+}
+fieldset,img{
+    border:0
+}
+ol,ul{
+    list-style:none
+}
+address,em{
+    font-style:normal
+}
+a{
+    text-decoration:none
+}
+a:hover{
+    text-decoration:underline
+}
+
+.bg_element{
+   background: #eee;
+}
+
+/* layout */
+.example-layout-01{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+header.hd-layout-basic{
+    height: 80px;
+}
+
+nav.nav-layout-basic{
+    height: 80px;
+    margin: 10px 0;
+}
+
+.left-side{
+    float: left;
+    width: 790px;
+    margin-right: 10px;
+}
+
+aside.aside-layout-basic{
+    float: left;
+    width: 200px;
+    height: 510px;
+}
+
+.body-layout-basic:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.section01-layout-basic{
+    height: 300px;
+}
+
+.article01-layout-basic{
+    height: 200px;
+    margin-top: 10px;
+}
+
+footer.ft-layout-basic{
+    margin-top: 10px;
+    height: 80px;
+}
+
+
