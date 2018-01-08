@@ -32,6 +32,10 @@ a:hover{
    background: #eee;
 }
 
+.line{
+    border: 1px solid #f00;
+}
+
 /* layout */
 .example-layout-01{
     width: 1000px;
@@ -59,11 +63,11 @@ aside.aside-layout-basic{
     height: 510px;
 }
 
-.body-layout-basic:after{
-    content: "";
-    clear: both;
-    display: block;
-}
+/*.body-layout-basic:after{*/
+    /*content: "";*/
+    /*clear: both;*/
+    /*display: block;*/
+/*}*/
 
 .section01-layout-basic{
     height: 300px;
@@ -80,3 +84,8 @@ footer.ft-layout-basic{
 }
 
 
+.clearfix:after{
+    clear: both;
+    content: '';
+    display: block;
+}
