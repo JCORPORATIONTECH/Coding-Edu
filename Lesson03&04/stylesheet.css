@@ -1,5 +1,10 @@
 @charset "UTF-8";
 
+/**{*/
+    /*margin:0;*/
+    /*padding:0;*/
+/*}*/
+
 /* reset */
 body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{
     margin:0;
@@ -25,8 +30,10 @@ a{
     text-decoration:none
 }
 a:hover{
-    text-decoration:underline
+    text-decoration: none;
 }
+
+
 
 .bg_element{
    background: #eee;
@@ -89,3 +96,34 @@ footer.ft-layout-basic{
     content: '';
     display: block;
 }
+
+.break-line{
+
+}
+
+
+.three_box{
+    float: left;
+    width: 300px;
+}
+
+.three_box_mid{
+    margin: 0 50px;
+}
+
+
+.center{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
