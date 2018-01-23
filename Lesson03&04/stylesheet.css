@@ -1,18 +1,13 @@
 @charset "UTF-8";
 
-/**{*/
-    /*margin:0;*/
-    /*padding:0;*/
-/*}*/
-
 /* reset */
 body,button,dd,dl,dt,fieldset,form,h1,h2,h3,h4,h5,h6,input,legend,li,ol,p,select,table,td,textarea,th,ul{
     margin:0;
     padding:0;
 }
 body,button,input,select,table,textarea{
-    font-size:12px;
-    font-family:Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif
+    font-size: 12px;
+    font-family: Dotum,'돋움',Helvetica,"Apple SD Gothic Neo",sans-serif
 }
 button,input{
     border-radius:0
@@ -33,7 +28,7 @@ a:hover{
     text-decoration: none;
 }
 
-
+/* end code snippet to reset */
 
 .bg_element{
    background: #eee;

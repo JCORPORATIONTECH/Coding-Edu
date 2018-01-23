@@ -6,6 +6,8 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/stylesheet.css" />
 	<link rel="stylesheet" href="./assets/font-awesome.min.css" />
+	<!-- swiper -->
+	<link rel="stylesheet" href="./assets/swiper.min.css" />
 </head>
 
 <body>
@@ -127,14 +129,28 @@
 	</section>
 
 	<section class="spot_banner_wrp">
+		<!-- sliding banner -->
 		<div class="spot_banner_inner">
-			<div>
-				<h2>전국 21개 증권사 상품 중<br /><strong>나에게 가장 높은 금리는 주는 CMA는?</strong></h2>
-				<a href="/" class="btn-find-cma">나의 BEST CMA찾기</a>						
-			</div>	
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+				<div class="swiper-button-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+			</div>
+			<!--<div>-->
+				<!--<h2>전국 21개 증권사 상품 중<br /><strong>나에게 가장 높은 금리는 주는 CMA는?</strong></h2>-->
+				<!--<a href="/" class="btn-find-cma">나의 BEST CMA찾기</a>						-->
+			<!--</div>-->
 		</div>
-		<a href="/" class="btn-prev">이전</a>
-		<a href="/" class="btn-next">다음</a>
+		<!--//  -->
 	</section>
 
 	<section class="self_information">
@@ -226,6 +242,7 @@
 	</section>
 	
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/swiper.min.js"></script>
 	<script type="text/javascript" src="./assets/javascript.js"></script>
 </body>
 </html>
