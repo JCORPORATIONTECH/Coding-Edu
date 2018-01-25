@@ -41,6 +41,8 @@ a:hover{
 
 .line{
     border: 1px solid #f00;
+    color: #f00;
+    font-size: 40px;
 }
 
 /* layout */
@@ -119,9 +121,115 @@ footer.ft-layout-basic{
 
 
 
+#hd{
+
+}
+
+.header{
+
+}
 
 
 
+
+
+.left-area{
+    float: left;
+    height: 500px;
+    background: #eee;
+    width: 600px;
+}
+
+.aside-area{
+    float: left;
+    width: 200px;
+    background: #eee;
+    height: 500px;
+}
+
+.content{
+    width: 1000px;
+    margin: 0 auto;
+    height: 100px;
+}
+
+/* 이것은 스타일시트입니다. */
+
+.header{
+    color: #000;
+    font-size: 20px;
+    /*border: 1px solid #000;*/
+    height: 50px;
+    /*padding: 10px;*/
+    /*margin: 10px;*/
+    background: #0baba4;
+}
+
+.contents{
+    color: #fff;
+    font-size: 20px;
+    /*border:2px solid #f56200;*/
+    /*height: 600px;*/
+    background: #f56200;
+}
+
+.footer{
+    font-size:20px;
+    height: 100px;
+    background: #eee;
+    /*padding:10px;*/
+    /*margin:10px;*/
+}
+
+
+.wrapper{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.navi{
+    height: 50px;
+}
+
+
+
+.section01{
+    background: #f0f;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.article{
+    background: #ff0;
+    height: 50px;
+}
+
+.aside-content{
+    padding: 10px;
+}
+
+
+.leftarea{
+    width:700px;
+    background:#f00;
+    float : left;
+}
+
+.rightarea{
+    width: 300px;
+    background: #0baba4;
+    float: left;
+}
+
+.link{
+    display: block;
+}
+
+
+.link_navi{
+    font-size: 16px;
+    color: #000;
+}
 
 
 

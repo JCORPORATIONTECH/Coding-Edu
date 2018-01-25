@@ -317,4 +317,143 @@ a:hover{
   line-height: 30px;
 }
 
+.navi_list {
+    float: left;
+    list-style: none;
+}
+
+.navi_link{
+    width: 100px;
+    /*border: 1px solid #f00;*/
+    display: block;
+    height: 57px;
+    text-align: center;
+    line-height: 57px;
+    color: #0b0c0c;
+}
+
+.navi_link:hover{
+    color: #04c584;
+}
+
+/*.navi_link:hover + .spreaded_navi{*/
+    /*display: block;*/
+/*}*/
+
+.navi_list:hover .spreaded_navi{
+    display: block;
+}
+
+
+.spreaded_navi{
+    display: none;
+    background: #fff;
+    position: absolute;
+    width: 100%;
+    top: 57px;
+    left: -213px;
+    padding: 20px 20px 20px 245px;
+}
+
+
+.nav_menu_first{
+    float: left;
+    margin-right: 100px;
+}
+
+
+.nav_menu_end:nth-child(3n){
+    margin-right: 0;
+}
+
+.menu-link{
+    display: inline-block;
+}
+
+.menu-sub-list{
+    list-style: none;
+}
+
+.menu-sub-title{
+    font-size: 18px;
+}
+
+.menu-sub-link{
+    font-size: 16px;
+    color: #666;
+}
+
+
+.menu-sub-link:hover{
+    color: #04c584;
+}
+
+
+.pick-inner{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.pick-box{
+    position: relative;
+    float: left;
+    width: 235px;
+    /*margin-right: 20px;*/
+    margin: 20px 20px 0 0;
+    border: 1px solid #eee;
+}
+
+
+.pick-box:nth-child(4n){
+    margin-right: 0;
+}
+
+.info-wrp{
+    padding: 10px;
+    display: block;
+}
+
+.txt-type{
+    color: #0baba4;
+    font-size: 16px;
+}
+
+
+.txt-title{
+    color: #666;
+    font-size: 20px;
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.prevButton{
+    position: absolute;
+    bottom: 10px;
+    right: 39px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+}
+
+
+.nextButton{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #eee;
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+}
+
+.active{
+    color: red !important;
+}
+
 
