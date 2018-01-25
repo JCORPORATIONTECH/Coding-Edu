@@ -6,6 +6,8 @@
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
 	<link rel="stylesheet" href="./assets/stylesheet.css" />
 	<link rel="stylesheet" href="./assets/font-awesome.min.css" />
+	<!-- swiper -->
+	<link rel="stylesheet" href="./assets/swiper.min.css" />
 </head>
 
 <body>
@@ -23,122 +25,7 @@
 
 	<header id="header">
 		<h1 class="logo"><a href="/" class="logo_link"></a></h1>
-
 		<nav class="navigation">
-			<ol class="navi_wrapper clearfix">
-				<li class="navi_list">
-					<a href="#" class="navi_link">카드</a>
-                    <div class="spreaded_navi clearfix">
-                        <div class="nav_menu_first">
-                            <h2 class="menu-sub-title">카드</h2>
-                            <ul class="menu-sub-wrp">
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">테마별 카드추천</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="nav_menu_first">
-                            <h2 class="menu-sub-title">카드</h2>
-                            <ul class="menu-sub-wrp">
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">테마별 카드추천</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="nav_menu_first nav_menu_end">
-                            <h2 class="menu-sub-title">카드</h2>
-                            <ul class="menu-sub-wrp">
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">테마별 카드추천</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-				</li>
-				<li class="navi_list">
-					<a href="#" class="navi_link">카드</a>
-                    <div class="spreaded_navi clearfix">
-                        <div class="nav_menu_first">
-                            <h2 class="menu-sub-title">카드</h2>
-                            <ul class="menu-sub-wrp">
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">테마별 카드추천</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="nav_menu_first">
-                            <h2 class="menu-sub-title">카드2</h2>
-                            <ul class="menu-sub-wrp">
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">테마별 카드추천</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="nav_menu_first nav_menu_end">
-                            <h2 class="menu-sub-title">카드</h2>
-                            <ul class="menu-sub-wrp">
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">테마별 카드추천</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                                <li class="menu-sub-list">
-                                    <a href="#" class="menu-sub-link">222</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-				</li>
-				<li class="navi_list">
-					<a href="#" class="navi_link">카드</a>
-				</li>
-				<li class="navi_list">
-					<a href="#" class="navi_link">카드</a>
-				</li>
-				<li class="navi_list">
-					<a href="#" class="navi_link">카드</a>
-				</li>
-				<li class="navi_list">
-					<a href="#" class="navi_link">카드</a>
-				</li>
-				<li class="navi_list">
-					<a href="#" class="navi_link">카드</a>
-				</li>
-			</ol>
-		</nav>
-
-		<nav class="navigation blind">
 			<ol class="nav clearfix">
 				<li class="nav_list">
                     <a href="/" class="nav_link">카드</a>
@@ -233,8 +120,6 @@
 			</ol>
 		</nav>
 
-
-
 	</header>
 	
 	<section class="card_section">
@@ -244,14 +129,28 @@
 	</section>
 
 	<section class="spot_banner_wrp">
+		<!-- sliding banner -->
 		<div class="spot_banner_inner">
-			<div>
-				<h2>전국 21개 증권사 상품 중<br /><strong>나에게 가장 높은 금리는 주는 CMA는?</strong></h2>
-				<a href="/" class="btn-find-cma">나의 BEST CMA찾기</a>						
-			</div>	
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">Slide 1</div>
+					<div class="swiper-slide">Slide 2</div>
+					<div class="swiper-slide">Slide 3</div>
+					<div class="swiper-slide">Slide 4</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"><i class="fa fa-chevron-right" aria-hidden="true"></i></div>
+				<div class="swiper-button-prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></div>
+			</div>
+			<!--<div>-->
+				<!--<h2>전국 21개 증권사 상품 중<br /><strong>나에게 가장 높은 금리는 주는 CMA는?</strong></h2>-->
+				<!--<a href="/" class="btn-find-cma">나의 BEST CMA찾기</a>						-->
+			<!--</div>-->
 		</div>
-		<a href="/" class="btn-prev">이전</a>
-		<a href="/" class="btn-next">다음</a>
+		<!--//  -->
 	</section>
 
 	<section class="self_information">
@@ -260,41 +159,6 @@
 			<p>뱅크샐러드는 쉽고 정확하게 비교합니다.</p>
 		</div>
 	</section>
-
-    <!--<section class="pick">-->
-        <!--<div class="pick-inner clearfix">-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-                <!--<span class="info-wrp">-->
-                    <!--<span class="txt-type">카드</span>-->
-                    <!--<strong class="txt-title">2017 부츠</strong>-->
-                <!--</span>-->
-                <!--<a href="#" class="prevButton"><i class="fa fa-angle-left" aria-hidden="true"></i></a>-->
-                <!--<a href="#" class="nextButton"><i class="fa fa-angle-right" aria-hidden="true"></i></a>-->
-            <!--</div>-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-            <!--</div>-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-            <!--</div>-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-            <!--</div>-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-            <!--</div>-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-            <!--</div>-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-            <!--</div>-->
-            <!--<div class="pick-box">-->
-                <!--<img src="./assets/images/img_02.jpg" alt="" class="pick_img" />-->
-            <!--</div>-->
-        <!--</div>-->
-    <!--</section>-->
 
 	<section class="pick_item">
 		<div class="pick_item_inner clearfix">
@@ -378,6 +242,7 @@
 	</section>
 	
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./assets/swiper.min.js"></script>
 	<script type="text/javascript" src="./assets/javascript.js"></script>
 </body>
 </html>
