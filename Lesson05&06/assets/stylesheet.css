@@ -141,6 +141,7 @@ a:hover{
 /* banner */
 .spot_banner_wrp{
 	background: #04c584;
+    height: 500px;
 }
 
 .spot_banner_inner{
@@ -455,3 +456,67 @@ a:hover{
 .active{
     color: red !important;
 }
+
+
+/* swiper */
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /*background: #fff;*/
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+    background: none;
+    font-size: 30px;
+    color: #ffffff;
+    line-height: 44px;
+    text-align: center;
+}
+
+.swiper-pagination-bullet-active{
+    background: #fff;
+    width: 50px;
+    border-radius: 10px;
+}
+
+.accr_wrp {width:1000px; margin: 0 auto}
+.accr_left {float: left; width: 300px; margin-right: 20px}
+
+.accr-content {float: left; width: 680px;}
+
+.accr_wrp .ui-my-button{
+   background: #fff;
+}
+
+.accr_wrp .ui-my-button:active{
+    background: green;
+}
+
+.accr_wrp .ui-my-button2{
+    background: #fff;
+}
+
+.accr_wrp .ui-my-button2:active{
+    background: purple;
+}
+
+

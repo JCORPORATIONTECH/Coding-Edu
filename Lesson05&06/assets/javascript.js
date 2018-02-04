@@ -97,5 +97,47 @@
 	// 	$(this).addClass('active');
 	// });
 
+	new Swiper('.swiper-container', {
+		spaceBetween: 30,
+		centeredSlides: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		pagination: {
+			el: '.swiper-pagination',
+			clickable: true,
+		},
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+	});
+
+
+
+
+
+
+
+
 	
 }(window, jQuery, undefined));
+
+
+(function () {
+	var accr = $( "#accordion" );
+	accr.accordion();
+
+}());
+
+
+$( function() {
+	$( ".widget input[type=submit], .widget a, .widget button" ).button();
+	$( "button, input, a" ).click( function( event ) {
+		event.preventDefault();
+	} );
+} );
+
+//var accr = $( "#accordion" );
+// accr.accordion();
