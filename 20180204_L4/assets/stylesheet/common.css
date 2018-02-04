@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+.clearfix::after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.blind{
+  display: none;
+}
