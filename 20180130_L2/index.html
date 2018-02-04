@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<style>
+		/*div{
+			border: 1px solid #f00;
+		}*/
+
+		/*header{
+			border: 1px solid #f00;	
+		}*/
+
+		/*#header{
+			border: 1px solid #f00;	
+		}*/
+		
+		/* 
+			1. float : left; 
+			2. margin: 0 auto;
+			3. .clearfix
+		*/
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		li{
+			list-style: none;
+		}
+
+		a{
+			text-decoration: none;
+		}
+		a:hover{
+			text-decoration: none;
+		}
+
+		.content{
+			border: 1px solid #f00;
+			width: 1000px;
+			margin: 0 auto;
+			/*height: 500px;*/
+		}
+	
+		.content_main{
+			width: 700px;
+			background: #ff0;
+			height: 500px;
+			float: left;
+		}
+
+		.aside{
+			background: #00f;
+			height: 500px;
+			width: 300px;
+			float: left;
+		}
+
+		.clearfix::after{
+			clear: both;
+			display: block;
+			content: "";
+		}
+		#header{
+			/*background: #efefef;*/
+			height: 50px;
+		}
+
+		.header_inner{
+			width: 1000px;
+			margin: 0 auto;
+			background: #ff0;
+
+		}
+
+		.navi_list{
+			float: left;
+			width: 142px;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		#navi{
+			width: 1000px;
+			margin: 0 auto;
+			height: 40px;
+		}
+
+		.navi_link{
+			
+		}
+
+		.blind{
+			display: none;
+		}
+
+
+		.navi_top_inner{
+			width: 1000px;
+			margin: 0 auto;
+			height: 30px;
+			position: relative;
+		}
+
+		.navi_top{
+			background: #4d4b45;
+			position: relative;	
+		}
+		
+		.sns_part{
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			left: 0;
+
+		}
+
+		.local_navi{
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			/*border: 1px solid #f00;*/
+		}
+
+		.sns_list{
+			float: left;
+			border-left: 1px solid rgb(95, 93, 88);
+			height: 30px;
+
+		}
+
+		.sns_ico{
+			height: 30px;
+			border-right: 1px solid rgb(95, 93, 88);
+		}
+
+		.local_list{
+			float: left;
+			
+		}
+
+
+		.local_link{
+			color: #fff;
+			font-size: 14px;
+			/*border: 1px solid #f00;*/
+			height: 30px;
+			display: block;
+			padding: 0 6px;
+			line-height: 30px;
+
+		}
+		.local_link:hover{
+			background: rgb(153, 150, 138);
+		}
+			
+		.local_wrp .active{
+			background: rgb(153, 150, 138);	
+		}
+		
+
+		.sns_ico{
+
+		}
+
+		#header .navi_top .sns_ico{
+			
+		}
+
+		/* 
+			브라우저는 문서 내의 모든 li를 탐색한 후에 그 중에 #header에 영역에 있는 li를 다시 검색하게 된다. 
+			이 때문에 자주 접근하게 되는 엘리먼트에 대해서는 클래스를 부여하는 것이 좋다.
+		*/
+		#header li{
+			
+		}
+
+		#header img{
+
+		}
+
+
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="navi_top">
+			<div class="navi_top_inner clearfix">
+				<!-- sns_part -->
+				<div class="sns_part">
+					<ul class="sns_ico clearfix">
+						<li class="sns_list">
+							<a href="" class="sns_link">
+								<img src="assets/images/icon_fb.png" alt="" width="39" height="30" />
+							</a>
+						</li>
+						<li class="sns_list">
+							<a href="" class="sns_link">
+								<img src="assets/images/icon_fb.png" alt="" width="39" height="30" />
+							</a>
+						</li>
+						<li class="sns_list">
+							<a href="" class="sns_link">
+								<img src="assets/images/icon_fb.png" alt="" width="39" height="30" />
+							</a>
+						</li>
+						<li class="sns_list">
+							<a href="" class="sns_link">
+								<img src="assets/images/icon_fb.png" alt="" width="39" height="30" class="sns_img">
+							</a>
+						</li>
+						<li class="sns_list">
+							<a href="" class="sns_link">
+								<img src="assets/images/icon_fb.png" alt="" width="39" height="30" class="sns_img">
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- // sns_part -->
+				<div class="local_navi">
+					<ul class="local_wrp">
+						<li class="local_list"><a href="" class="local_link active">메뉴1</a></li>
+						<li class="local_list"><a href="" class="local_link">메뉴2</a></li>
+						<li class="local_list"><a href="" class="local_link">메뉴3</a></li>
+						<li class="local_list"><a href="" class="local_link">메뉴4</a></li>
+						<li class="local_list"><a href="" class="local_link">메뉴5</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<nav id="navi">
+			<ul class="navigation clearfix">
+				<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+				<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+				<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+				<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+				<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+				<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+				<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	
+
+
+	<div class="content clearfix blind">
+		<div class="content_main">
+			<section class="section">
+				section
+			</section>
+			<article class="article">
+				article
+			</article>
+		</div>
+		
+		<aside class="aside">
+			aside
+		</aside>	
+	</div>
+	
+	<footer id="footer" class="blind">footer</footer>
+	
+
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test</title>
+	<style>
+		/*div{
+			border: 1px solid #f00;
+		}*/
+
+		/*header{
+			border: 1px solid #f00;	
+		}*/
+
+		/*#header{
+			border: 1px solid #f00;	
+		}*/
+		
+		/* 
+			1. float : left; 
+			2. margin: 0 auto;
+			3. .clearfix
+		*/
+
+		*{
+			margin: 0;
+			padding: 0;
+		}
+
+		li{
+			list-style: none;
+		}
+
+
+		.content{
+			border: 1px solid #f00;
+			width: 1000px;
+			margin: 0 auto;
+			/*height: 500px;*/
+		}
+	
+		.content_main{
+			width: 700px;
+			background: #ff0;
+			height: 500px;
+			float: left;
+		}
+
+		.aside{
+			background: #00f;
+			height: 500px;
+			width: 300px;
+			float: left;
+		}
+
+		.clearfix::after{
+			clear: both;
+			display: block;
+			content: "";
+		}
+		#header{
+			background: #efefef;
+			height: 50px;
+		}
+
+		.header_inner{
+			width: 1000px;
+			margin: 0 auto;
+			background: #ff0;
+
+		}
+
+		.navi_list{
+			float: left;
+			width: 142px;
+			height: 40px;
+			line-height: 40px;
+		}
+
+		#navi{
+			width: 1000px;
+			margin: 0 auto;
+			height: 40px;
+		}
+
+		.navi_link{
+			
+		}
+
+	</style>
+</head>
+<body>
+	<header id="header">
+		<div class="header_inner">
+			header
+		</div>
+	</header>
+
+	<nav id="navi">
+		<ul class="navigation clearfix">
+			<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+			<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+			<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+			<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+			<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+			<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+			<li class="navi_list"><a href="" class="navi_link">menu</a></li>
+		</ul>
+	</nav>
+
+
+	<div class="content clearfix">
+		<div class="content_main">
+			<section class="section">
+				section
+			</section>
+			<article class="article">
+				article
+			</article>
+		</div>
+		
+		<aside class="aside">
+			aside
+		</aside>	
+	</div>
+	
+	<footer id="footer">footer</footer>
+	
+
+</body>
+</html>
