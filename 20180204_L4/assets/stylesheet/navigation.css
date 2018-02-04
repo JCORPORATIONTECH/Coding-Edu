@@ -7,7 +7,7 @@
   height: 40px;
   line-height: 40px;
   text-align: center;
-  margin: 0 15px;
+  margin: 0 5px;
 }
 
 #navi{
@@ -91,7 +91,6 @@
   min-height: 100px;
   display: none;
   background: #fcfcfa;
-
   padding: 10px;
   z-index: 200;
 }
@@ -102,10 +101,10 @@
 
 .navi_link{
   text-align: center;
-  padding-bottom: 10px;
   color: #777;
   font-size: 16px;
   font-weight: bold;
+  padding: 0 10px 10px 10px;
 }
 
 
@@ -133,12 +132,14 @@
   position: absolute;
   top: 35px;
   right: 55px;
+  z-index: 200;
 }
 
 .btnMenu{
   position: absolute;
   top: 35px;
   right: 0;
+  z-index: 200;
 }
 
 .sub_menu .nav-col{
@@ -158,6 +159,7 @@
   font-weight: bold;
   margin-bottom: 5px;
   margin-top: 5px;
+  display: block;
 }
 
 .sub_menu_link{
@@ -174,6 +176,7 @@
 .nav-col-tit{
   height: 134px;
   border-right: 1px solid #e6e4df;
+  color: #4d4b45;
 }
 
 .nav-col-link-wrp{

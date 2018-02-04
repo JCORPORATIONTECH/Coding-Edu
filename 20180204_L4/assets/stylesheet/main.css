@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+.top_spot{
+  background: #fff;
+  padding: 30px 0;
+}
+
+.top_spot_wrp{
+  max-width: 910px;
+  margin: 0 auto;
+  min-height: 450px;
+  position: relative;
+  padding-right: 280px;
+}
+
+.login_area{
+  width: 280px;
+  height: 450px;
+  background: #ff0;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.sliding_banner_container{
+  background: #f00;
+  position: relative;
+}
+
+.owl-prev{
+  position: absolute;
+  top: 200px;
+  left: 0;
+}
+
+.owl-next{
+  position: absolute;
+  top: 200px;
+  right: 0;
+}

@@ -9,3 +9,11 @@
 .blind{
   display: none;
 }
+
+.fontBlack {
+  color: #4d4b45;
+}
+
+.center{
+  text-align: center;
+}
