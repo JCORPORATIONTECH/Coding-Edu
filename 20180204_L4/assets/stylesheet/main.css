@@ -2,7 +2,7 @@
 
 .top_spot{
   background: #fff;
-  padding: 30px 0;
+  padding: 50px 0;
 }
 
 .top_spot_wrp{
@@ -14,17 +14,30 @@
 }
 
 .login_area{
-  width: 280px;
+  width: 278px;
   height: 450px;
-  background: #ff0;
   position: absolute;
   top: 0;
   right: 0;
+  border: 1px solid #e6e4df;
 }
 
-.sliding_banner_container{
-  background: #f00;
+.login_area_inner{
   position: relative;
+  padding: 0 15px;
+}
+
+
+/*
+  top sliding banner style
+*/
+
+.sliding_banner_container{
+  position: relative;
+}
+
+.sliding_banner_container .item{
+  height: 450px;
 }
 
 .owl-prev{
@@ -37,4 +50,127 @@
   position: absolute;
   top: 200px;
   right: 0;
+}
+
+.owl-dots{
+  text-align: left !important;
+}
+
+.owl-next{
+  width: 50px;
+  height: 70px;
+  background: url('../images/btn_right.png') no-repeat !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-indent: -999em;
+}
+
+.owl-prev{
+  width: 50px;
+  height: 70px;
+  background: url('../images/btn_left.png') no-repeat !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  text-indent: -999em;
+}
+
+
+/* login */
+.login_head{
+  height: 52px;
+  line-height: 52px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.check_id_box{
+  float: right;
+}
+
+.label-user{
+  color: #a1a19d;
+  font-size: 14px;
+}
+
+.input_userid,.input_password{
+  height: 38px;
+  width: 100%;
+  text-indent: 33px;
+  font-size: 15px;
+  border: 1px solid #e6e4df;
+  font-weight: bold;
+}
+
+.input_userid{
+  margin-bottom: 10px;
+  background: url('../images/ico_user.png') no-repeat 10px center;
+}
+
+.input_password{
+  background: url('../images/ico_pass.png') no-repeat 10px center;
+}
+
+.login_form .btnArea{
+  margin-top: 10px;
+
+}
+
+.btnLoginLink,
+.btnRegisterLink{
+  font-size: 17px;
+  width: 49%;
+  float: left;
+  text-align: center;
+  display: block;
+  height: 34px;
+  line-height: 34px;
+
+}
+
+.btnLoginLink{
+  background: #e2ed0e;
+  color: #123e54;
+}
+
+.btnRegisterLink{
+  background: #888;
+  margin-left: 2%;
+  color: #000;
+}
+
+.btnChaKaoFund{
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.notice-row-3{
+
+}
+
+.notice-head{
+  height: 49px;
+  line-height: 49px;
+  font-size: 18px;
+  font-weight: bold;
+  border-bottom: 1px solid #ffca08;
+}
+
+.btnMoreNotice{
+  float: right;
+  font-size: 12px;
+  color: #a1a19d;
+  padding-right: 20px;
+  background: url(../images/ico_more.png) no-repeat right center;
+}
+
+.notice-row-3 .notice-list{
+  height: 18px;
+  margin-top: 15px;
+}
+
+.notice-row-3 .notice-link{
+  color: #66635c;
+  font-size: 14px;
+  padding-left: 20px;
+  background: url('../images/bl_square-sm.png') no-repeat 5px center;
 }
