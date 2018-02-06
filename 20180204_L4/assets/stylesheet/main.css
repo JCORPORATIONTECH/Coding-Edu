@@ -74,6 +74,9 @@
   text-indent: -999em;
 }
 
+.sliding_banner_container .img_banner{
+  width: 909px !important;
+}
 
 /* login */
 .login_head{
