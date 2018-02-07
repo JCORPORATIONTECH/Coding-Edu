@@ -10,7 +10,7 @@
   margin: 0 auto;
   min-height: 450px;
   position: relative;
-  padding-right: 279px;
+  padding-right: 280px;
 }
 
 .login_area{
@@ -74,9 +74,6 @@
   text-indent: -999em;
 }
 
-.sliding_banner_container .img_banner{
-  width: 909px !important;
-}
 
 /* login */
 .login_head{
