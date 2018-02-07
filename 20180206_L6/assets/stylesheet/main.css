@@ -171,9 +171,7 @@
   margin-top: 10px;
 }
 
-.notice-row-3{
-
-}
+.notice-row-3{}
 
 .notice-head{
   height: 49px;
@@ -203,3 +201,160 @@
   background: url('../images/bl_square-sm.png') no-repeat 5px center;
 }
 
+
+/* news section */
+.news_section{
+  padding: 50px 0;
+  background: #f7f6f0;
+  border-bottom: solid 1px #e6e5df;
+  height: 618px; /* 임시 */
+}
+
+.notice_section{
+  padding: 50px 0;
+  background: #fcfcf7;
+  border-bottom: 1px solid #e6e5df;
+}
+
+.notice_section_inner{
+  width: 1190px;
+  margin: 0 auto;
+}
+
+.notice-box{
+  width: 33.33%;
+  float: left;
+}
+
+.notice-box-inner{
+  border: 1px solid #e6e4df;
+  border-top: 5px solid #fbe12e;
+  background: #fff;
+}
+
+
+.notice-box-inner:nth-child(1){
+  margin-right: 20px;
+}
+
+.notice-box-inner:nth-child(2){
+  margin: 0 20px;
+}
+
+.notice-box-inner:nth-child(3){
+  margin-left: 20px;
+}
+
+.notice-box-inner .tit{
+  height: 40px;
+  font-size: 18px;
+  line-height: 40px;
+  padding: 5px 10px 5px 40px;
+  color: #4d4b45;
+
+}
+
+/*.single-swiper-notice{*/
+  /*padding: 10px;*/
+  /*position: relative;*/
+/*}*/
+
+.accordian-menu{
+  padding: 0 10px;
+}
+
+.accordian-menu .accordian-desc{
+  background: #ffffe6;
+  position: relative;
+  padding-left: 200px;
+  height: 153px;
+  display: none;
+}
+
+.accordian-menu .desc_img{
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.accordian-menu .desc_link{
+  display: inline-block;
+  font-size: 14px;
+  padding: 20px 10px 10px 10px;
+  color: #4d4b45;
+}
+
+.accordian-menu .date{
+  display: block;
+  color: #bdbdbd;
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+.accordian-menu .accordian-tit{
+  background: #f7f6f4;
+  cursor: pointer;
+  height: 70px;
+  line-height: 70px;
+  font-size: 19px;
+  color: #66635c;
+  padding-left: 20px;
+  position: relative;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+
+.accordian-menu .ico_direction{
+  height: 70px;
+  width: 49px;
+  background: #99968a url('../images/ico_plus.png') no-repeat center center;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.accordian-menu .isOpen + .accordian-desc{
+  display: block;
+}
+
+.accordian-menu .isOpen .ico_direction{
+  background: #fbe12e url('../images/ico_minus.png') no-repeat center center;
+}
+
+.location_section{
+  background: #fff;
+}
+
+.location_section_inner{
+  padding: 50px 0;
+  height: 500px; /* 임시 */
+}
+
+.join-us{
+  background: #f2f1eb;
+}
+
+.join-us-inner{
+  padding: 50px 0;
+  height: 500px; /* 임시 */
+}
+
+#footer{
+  background: #65625c;
+}
+
+.footer_top{
+  height:98px;
+  background: #66635c;
+}
+
+.footer_middle{
+  height: 350px;
+  background: #4d4b45;
+}
+
+.footer_bottom{
+  height: 56px;
+  background: #66635c;
+}

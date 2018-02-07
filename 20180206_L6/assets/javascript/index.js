@@ -62,4 +62,17 @@
 	});
 	
 	
+	// accordian menu
+	var
+		accordianTit = $('.accordian-tit');
+	
+	accordianTit.bind('click', function () {
+		accordianTit.removeClass('isOpen');
+		$(this).addClass('isOpen');
+	});
+	
+	
+	
+	
+	
 }(jQuery));
