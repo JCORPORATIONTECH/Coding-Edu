@@ -26,8 +26,6 @@
 	// https://owlcarousel2.github.io/OwlCarousel2/
 	
 	
-	
-	
 	var owl = $('.owl-carousel');
 	owl.owlCarousel({
 		items: 1,
@@ -47,6 +45,42 @@
 	// $('.stop').on('click',function(){
 	// 	owl.trigger('stop.owl.autoplay')
 	// })
+
+	// TODO 아코디언 메뉴
+	$( function() {
+	    $( "#accordion" )
+	      .accordion({
+	        header: "> div > h3"
+	      })
+	      .sortable({
+	        axis: "y",
+	        handle: "h3",
+	        stop: function( event, ui ) {
+	          // IE doesn't register the blur when sorting
+	          // so trigger focusout handlers to remove .ui-state-focus
+	          ui.item.children( "h3" ).triggerHandler( "focusout" );
+	 
+	          // Refresh accordion to handle new order
+	          $( this ).accordion( "refresh" );
+	        }
+	      });
+	  } );
+
+
+		// 탭메뉴
+		/*
+			너아ㅓㄹ
+			ㅁㄴㅇㄹ
+			ㅁㄴㅇㄹ
+			ㅁㄴㅇ
+			ㄹㅁㄴㅇ
+
+		*/
+	  $( function() {
+	    $( "#tabs" ).tabs();
+	  } );
 	
+
+
 	
 }(jQuery));
