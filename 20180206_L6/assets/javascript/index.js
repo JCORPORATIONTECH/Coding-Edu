@@ -41,7 +41,7 @@
 	
 	// swiper
 	// ref. http://idangero.us/swiper
-	var swiper = new Swiper('.swiper-container', {
+	new Swiper('.swiper-main-banner', {
 		loop: true,
 		autoplay: {
 			delay: 3000,
@@ -72,6 +72,16 @@
 	});
 	
 	
+	
+	//
+	new Swiper('.swiper-banner-sm', {
+		loop: true,
+		spaceBetween: 30,
+		navigation: {
+			nextEl: '.btn-banner-sm-right',
+			prevEl: '.btn-banner-sm-left',
+		}
+	});
 	
 	
 	

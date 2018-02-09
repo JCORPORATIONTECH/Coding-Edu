@@ -23,3 +23,15 @@
   white-space: nowrap;
   overflow: hidden;
 }
+
+.ico_computer{
+  background: url('../images/ico_computer.png') no-repeat;
+}
+
+.ico_chart_list{
+  background: url('../images/ico_chart_list.png') no-repeat;
+}
+
+.ico_camera{
+  background: url('../images/ico_camera.png') no-repeat;
+}
