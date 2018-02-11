@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>hash jquery scrolling</title>
+	<style>
+		#a, #b, #c{
+			height: 2000px;
+		}
+
+		#menu{
+			position: fixed;
+			top: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+
+	<div id="menu">
+		<a href="#a">linkA</a>
+		<a href="#b">linkB</a>
+		<a href="#c">linkC</a>
+		<a href="./hash_move.html#c" data-location="true">Move</a>
+	</div>
+
+	<div id="a"><h1>A</h1></div>
+	<div id="b"><h1>B</h1></div>
+	<div id="c"><h1>C</h1></div>
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+	<script> 
+		(function($, win) {
+			// 질문 : http://kin.naver.com/qna/detail.nhn?d1id=1&dirId=1040202&docId=294281001#hash
+
+			// j.lee@jcorporationtech.com
+			var 
+				body = $('html, body'),
+				menu = $("#menu a");
+
+
+			$(win).bind('load', function () {
+				var hash = window.location.hash;
+				
+				if(hash){
+					// 1. 페이지이동
+					// 2. 동일한 영역에서의 릴로드
+					moveToHashPos(body, 10, function () {
+						moveToHashPos(hash, 500);
+					});
+				}
+			});
+
+
+			menu.on('click', function(event) { 
+				if (this.hash !== "") {
+					if(!$(this).attr('data-location')){
+						event.preventDefault(); 
+					}else{
+						return;
+					}
+
+					var hash = this.hash;
+					// 
+					window.history.pushState({pos : hash}, hash, hash);
+
+					moveToHashPos(hash, 800, function () {
+						window.location.hash = hash;
+					});
+				}
+			}); 
+
+
+			function moveToHashPos(hash, duration, callback){
+				body.stop().animate({ 
+					scrollTop: $(hash).offset().top 
+				}, duration, callback);
+			}
+
+			$(win).bind('popstate',function() {
+				var State = window.history.state;
+				
+				if(State && State.pos){
+					moveToHashPos(State.pos, 500);
+				}
+			});
+
+		}(jQuery, window));
+	
+	</script> 
+
+</body>
+</html>
