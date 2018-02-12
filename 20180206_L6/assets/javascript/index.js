@@ -63,16 +63,32 @@
 	
 	
 	// accordian menu
-	var
-		accordianTit = $('.accordian-tit');
+	var accordianTit = $('.accordian-tit');
 	
-	accordianTit.bind('click', function () {
+	// accordianTit.bind('click', function () {
+	// 	accordianTit.removeClass('isOpen');
+	// 	$(this).addClass('isOpen');
+	// });
+
+	accordianTit.click(function () {
 		accordianTit.removeClass('isOpen');
 		$(this).addClass('isOpen');
 	});
+
+	// var eventType = 'mouseover';
+	//
+	// // accordianTit.bind(eventType, action);
+	//
+	// function action(a, b){
+	// 	// alert(a);
+	// 	b(a);
+	// }
+	//
+	// action('1', function () {
+	// 	alert('test');
+	// });
 	
-	
-	
+
 	
 	
 }(jQuery));
