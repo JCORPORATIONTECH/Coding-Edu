@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title></title>
+	<style>
+		.img_wrapper img{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+
+<div class="imgs_wrapper">
+	<div class="img_wrapper">
+		<img src="http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg" alt="" />
+	</div>
+</div>
+<a href="#" class="btn_more">MORE!</a>
+
+
+<script src="https://code.jquery.com/jquery-3.0.0.js"></script>
+<script>
+	(function ($) {
+		var
+			btn_more = $('.btn_more'), // 가져오기 버튼
+			imgs_wrapper = $('.imgs_wrapper'), // 이미지를 추가할 엘리먼트 래퍼
+			image_array = [ // 추가로 가져올 이미지 배열
+				'http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg',
+				'http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg',
+				'http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg',
+				'http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg',
+				'http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg',
+				'http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg',
+				'http://www.photosbytrinagueck.com/wp-content/uploads/94009-937188d4a2be1a90dfc47c4d403a0064.jpg'
+			],
+			current_pos = 0, // 배열의 포인터
+			img_size = image_array.length,
+			load_unit = 1, // 한 번에 읽어들이는 갯수
+			size=0,i=0; // for문의 변수 초기화
+
+		btn_more.bind('click', function (e) {
+			e.preventDefault();
+
+			if(img_size > current_pos ){
+				size=current_pos+load_unit;
+
+				if(size > img_size){
+					size = img_size;
+				}
+
+				for(i=current_pos;i<size;i++){
+					imgs_wrapper.append('<div class="img_wrapper"><img src="'+image_array[current_pos]+'" alt="" /></div>');
+					current_pos++;
+				}
+
+				if(img_size === current_pos ){
+					$(this).remove();
+				}
+			}
+		});
+	}(jQuery));
+
+
+</script>
+
+
+</body>
+</html>

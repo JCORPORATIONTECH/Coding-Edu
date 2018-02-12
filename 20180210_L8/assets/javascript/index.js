@@ -63,28 +63,26 @@
 	
 	
 	// accordian menu
-	var accordianTit = $('.accordian-tit');
+	var
+		accordianTit = $('.accordian-tit');
 	
-	// accordianTit.bind('click', function () {
-	// 	accordianTit.removeClass('isOpen');
-	// 	$(this).addClass('isOpen');
-	// });
-
-	accordianTit.click(function () {
+	accordianTit.bind('click', function () {
 		accordianTit.removeClass('isOpen');
 		$(this).addClass('isOpen');
 	});
-
+	
+	
+	
+	//
 	new Swiper('.swiper-banner-sm', {
 		loop: true,
 		spaceBetween: 30,
 		navigation: {
 			nextEl: '.btn-banner-sm-right',
-			prevEl: '.btn-banner-sm-left'
+			prevEl: '.btn-banner-sm-left',
 		}
 	});
 	
-
 	
 	
 }(jQuery));
