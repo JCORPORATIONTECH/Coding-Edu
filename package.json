@@ -1,0 +1,23 @@
+{
+  "name": "coding-eud",
+  "version": "1.0.0",
+  "description": "tracing for just code during education",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server" : "http-server ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://JJ81@github.com/JCORPORATIONTECH/Coding-Edu.git"
+  },
+  "author": "j.lee@jcorporationtech.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/JCORPORATIONTECH/Coding-Edu/issues"
+  },
+  "homepage": "https://github.com/JCORPORATIONTECH/Coding-Edu#readme",
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

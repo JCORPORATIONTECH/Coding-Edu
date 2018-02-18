@@ -1,0 +1,37 @@
+@charset "UTF-8";
+
+.clearfix::after{
+  clear: both;
+  display: block;
+  content: "";
+}
+
+.blind{
+  display: none;
+}
+
+.fontBlack {
+  color: #4d4b45;
+}
+
+.center{
+  text-align: center;
+}
+
+.ellipsis{
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.ico_computer{
+  background: url('../images/ico_computer.png') no-repeat;
+}
+
+.ico_chart_list{
+  background: url('../images/ico_chart_list.png') no-repeat;
+}
+
+.ico_camera{
+  background: url('../images/ico_camera.png') no-repeat;
+}
