@@ -118,7 +118,7 @@
 	new_link.bind('click', function (e) {
 		e.preventDefault();
 		var _self = $(this);
-		
+
 		if(!_self.hasClass('active')){
 			sub_list_wrp.css('display', 'none');
 			_self.next('.sub_list_wrp').fadeIn(transitionDelay);
