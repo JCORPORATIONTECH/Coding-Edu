@@ -79,6 +79,79 @@
 	// var map = new daum.maps.Map(container, options);
 	
 	
+	// 푸터의 옵션 선택 셀렉트 박스
+	var
+		ft_selectbox = $('#ft_selectbox')
+		,selectedValue = $('.selectedValue');
+	
+	ft_selectbox.bind('change', function () {
+		var
+			target = $(this).find('option:selected')
+			,selectedTitle = target.val()
+			,url = target.attr('data-url');
+		
+		if(url){
+			openNewPopup(url, selectedTitle);
+		}
+		
+		selectedValue.text(selectedTitle);
+	});
+	
+	
+	/**
+	 *
+	 * @param url
+	 * @param title
+	 * @param option
+	 */
+	function openNewPopup(url, title, option){
+		window.open(url, title);
+	}
+	
+	
+	// 탭전환
+	var
+		new_link = $('.new_link'),
+		sub_list_wrp = $('.sub_list_wrp'),
+		transitionDelay = 500;
+	
+	new_link.bind('click', function (e) {
+		e.preventDefault();
+		var _self = $(this);
+		
+		if(!_self.hasClass('active')){
+			sub_list_wrp.css('display', 'none');
+			_self.next('.sub_list_wrp').fadeIn(transitionDelay);
+		}
+	});
+	
+	// 로그인 폼 타당성 검사
+	var
+		btnLoginLink = $('.btnLoginLink'),
+		input_userid = $('.input_userid'),
+		input_password = $('.input_password'),
+		formLogin = $('.formLogin');
+	
+	btnLoginLink.bind('click', function (e) {
+		e.preventDefault();
+		
+		if(input_userid.val().trim() === ''){
+			alert('아이디를 입력하세요.');
+			input_userid.focus();
+			return;
+		}
+		
+		if(input_password.val().trim() === ''){
+			alert('비밀번호를 입력하세요.');
+			input_password.focus();
+			return;
+		}
+		
+		formLogin.submit();
+	});
+	
+	
+	
 }(jQuery));
 
 
@@ -138,6 +211,7 @@
 	 */
 	MakeMap.prototype.bindEvent = function (marker) {
 		var _self = this;
+		
 		marker.addListener('mouseover', function() {
 			// _map.panTo(marker.getPosition()); // UX 문제가 발생하여 주석처리
 			var _self = this;
@@ -158,13 +232,13 @@
 			}
 		});
 		
-		marker.makeHTML = function () {
-			return '<div style="width:220px;"><strong>'+this.title+'</strong><br /><span>'+this.addr+'</span></div>';
-		};
-		
 		marker.addListener('click', function() {
 			window.open(_self.link, _self.title);
 		});
+		
+		marker.makeHTML = function () {
+			return '<div style="width:220px;"><strong>'+this.title+'</strong><br /><span>'+this.addr+'</span></div>';
+		};
 	};
 	
 	

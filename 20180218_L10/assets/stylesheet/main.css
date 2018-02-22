@@ -733,10 +733,11 @@
 .news_box .new_list{
   float: left;
   width: 25%;
-  position: relative;
+  /*position: relative;*/
 }
 
 .news_box .new_list_wrp{
+  position: relative;
   /*border: 1px solid #e6e4df;*/
   border-top: 5px solid #99968a;
   /*background: #fff;*/

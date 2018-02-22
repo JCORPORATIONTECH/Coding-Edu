@@ -190,7 +190,7 @@
 				<div class="login_area_inner">
 					<!-- login -->
 					<div class="login_form">
-						<form action="/" method="post">
+						<form action="/" method="post" class="formLogin">
 							<fieldset>
 								<h4 class="clearfix login_head">
 									로그인
@@ -238,7 +238,7 @@
 						<a href="#" class="new_link active">당브리핑</a>
 						<ol class="sub_list_wrp">
 							<li class="sub_list ellipsis">
-								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
+								<a href="#" class="sub_list_link">[소식1] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
 							</li>
 							<li class="sub_list ellipsis">
 								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
@@ -261,7 +261,7 @@
 						<a href="#" class="new_link">원내소식</a>
 						<ol class="sub_list_wrp">
 							<li class="sub_list ellipsis">
-								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
+								<a href="#" class="sub_list_link">[소식2] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
 							</li>
 							<li class="sub_list ellipsis">
 								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
@@ -284,7 +284,7 @@
 						<a href="#" class="new_link">정책논평</a>
 						<ol class="sub_list_wrp">
 							<li class="sub_list ellipsis">
-								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
+								<a href="#" class="sub_list_link">[소식3] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
 							</li>
 							<li class="sub_list ellipsis">
 								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
@@ -307,7 +307,7 @@
 						<a href="#" class="new_link">뉴스레터</a>
 						<ol class="sub_list_wrp">
 							<li class="sub_list ellipsis">
-								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
+								<a href="#" class="sub_list_link">[소식4] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
 							</li>
 							<li class="sub_list ellipsis">
 								<a href="#" class="sub_list_link">[소식] 정의당 2월 15일(목)/16일(금)/17일(토)/18일(일)/19일(월)/20일(화)</a>
@@ -617,16 +617,15 @@
 						<div class="ft_selectbox">
 							<label for="ft_selectbox" class="ft_selectbox_cover">
 								<span class="ft_selectbox_inner">
-									이웃 사이트
+									<span class="selectedValue">이웃 사이트</span>
 									<i class="fa fa-angle-down"></i>
 								</span>
 							</label>
 							<select id="ft_selectbox" name="ft_selectbox" class="affiliate_site">
-								<option value="">:: 목록 ::</option>
-								<option value="">정의정책연구소</option>
-								<option value="">교육연수</option>
-								<option value="">비상구(비정규직상)</option>
-								<option value="">디버그(IT노동상담)</option>
+								<option value="정의정책연구소" data-url="http://research.justice21.org">정의정책연구소</option>
+								<option value="교육연수" data-url="http://edu.justice21.org">교육연수</option>
+								<option value="비상구(비정규직상담)" data-url="http://BSG.justice21.org">비상구(비정규직상담)</option>
+								<option value="디버그(IT노동상담)" data-url="http://debug.justice21.org">디버그(IT노동상담)</option>
 							</select>
 						</div>
 					</li>
