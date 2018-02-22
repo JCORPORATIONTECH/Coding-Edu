@@ -122,7 +122,11 @@
 		if(!_self.hasClass('active')){
 			sub_list_wrp.css('display', 'none');
 			_self.next('.sub_list_wrp').fadeIn(transitionDelay);
+
+			new_link.removeClass('active');
+			_self.addClass('active');
 		}
+
 	});
 	
 	// 로그인 폼 타당성 검사
@@ -149,7 +153,11 @@
 		
 		formLogin.submit();
 	});
-	
+
+	// LESSON. JS
+	// 쿠키를 사용한 아이디 저장 기능 구현
+	// 쿠키에 접근하고 쓰고 읽는 방법에 대해서 알아본다.
+
 	
 	
 }(jQuery));

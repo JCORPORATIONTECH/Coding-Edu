@@ -689,7 +689,7 @@
   top: 0;
   left: 20px;
   z-index: 100;
-  width:150px;
+  width:166px;
   cursor: pointer;
 }
 
@@ -698,7 +698,7 @@
   top: -14px;
   left: 0;
   z-index: 10;
-  width: 150px;
+  width: 172px;
   padding: 10px;
   font-size: 15px;
   border: 3px solid #e9dddd;
@@ -713,7 +713,7 @@
 .ft_selectbox_inner .fa{
   position: absolute;
   right: 0;
-  top: 0;
+  top: 4px;
 }
 
 
