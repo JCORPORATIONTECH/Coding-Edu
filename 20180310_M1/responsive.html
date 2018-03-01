@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>media query</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		
+		.box{
+			background: red;
+			height: 100px;
+		}
+
+		@media screen and (max-width: 320px) {
+			.box{
+				background: grey;
+			}
+		}
+
+		@media screen and (min-width: 320px) and (max-width: 640px) {
+			.box{
+				background: green;
+			}
+		}
+
+		@media screen and (min-width: 640px) and (max-width: 800px){
+			.box{
+				background: yellow;
+			}
+		}
+
+		@media screen and (min-width: 800px) and (max-width: 1020px){
+			.box{
+				background: blue;	
+			}
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="box">
+		box
+	</div>
+
+</body>
+</html>
