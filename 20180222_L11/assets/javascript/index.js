@@ -138,6 +138,13 @@
 	
 	btnLoginLink.bind('click', function (e) {
 		e.preventDefault();
+
+		// event bubbling
+		// event capturing
+
+		// event propagation
+		// event delegation
+
 		
 		if(input_userid.val().trim() === ''){
 			alert('아이디를 입력하세요.');
